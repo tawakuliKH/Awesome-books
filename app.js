@@ -24,8 +24,9 @@ if (localData != null) {
 const btnSubmit = document.querySelector('.add-book');
 const BookName = document.querySelector('.name');
 const BookAuthor = document.querySelector('.author');
-// ADD Book Funciton 
-function addBook (){
+
+// ADD Book Funciton
+function addBook() {
   const book = {
     id: books.length,
     name: BookName.value,
