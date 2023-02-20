@@ -8,7 +8,7 @@ if (localData != null) {
   <div>
   <div>${item.name}</div>
   <div>${item.author}</div>
-  <button class='btn-remove' id='${item.id}' onclick='remove(${item.id})'>Remove</button>
+  <button class='btn-remove' id='${item.id}' onclick='removeBook(${item.id})'>Remove</button>
   </div>
   <hr>
   `;
@@ -24,7 +24,8 @@ if (localData != null) {
 const btnSubmit = document.querySelector('.add-book');
 const BookName = document.querySelector('.name');
 const BookAuthor = document.querySelector('.author');
-btnSubmit.addEventListener('click', () => {
+// ADD Book Funciton 
+function addBook (){
   const book = {
     id: books.length,
     name: BookName.value,
@@ -32,10 +33,11 @@ btnSubmit.addEventListener('click', () => {
   };
   books.push(book);
   localStorage.setItem('Books', JSON.stringify(books));
-});
+}
+btnSubmit.addEventListener('click', addBook);
 
 // eslint-disable-next-line no-unused-vars
-function remove(id) {
+function removeBook(id) {
   books = books.filter((item) => item.id !== id);
   localStorage.setItem('Books', JSON.stringify(books));
   window.location.reload();
