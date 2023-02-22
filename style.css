@@ -21,10 +21,10 @@
 }
 
 .books-container {
-  padding:0;
+  padding: 0;
 }
 
-div.books-contain li.books-list:nth-child(odd){
+div.books-contain li.books-list:nth-child(odd) {
   background-color: #e6ebeb;
 }
 
