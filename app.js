@@ -14,11 +14,9 @@ class BookCollect {
       name: BookName,
       author: Author,
     };
-    
     this.books.push(book);
     localStorage.setItem('Books', JSON.stringify(this.books));
   }
-
 }
 
 const BookCollection = new BookCollect();
