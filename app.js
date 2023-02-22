@@ -9,16 +9,14 @@ class BookCollect {
     window.location.reload();
   }
 
-    addBook(BookName, Author) {
+  addBook(BookName, Author) {
     const book = {
       name: BookName,
       author: Author,
     };
-    
     this.books.push(book);
     localStorage.setItem('Books', JSON.stringify(this.books));
   }
-  
 }
 
 const BookCollection = new BookCollect();
