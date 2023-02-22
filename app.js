@@ -26,12 +26,10 @@ const BookListContainer = document.querySelector('.books-container');
 if (localData != null) {
   localData.forEach((item) => {
     BookListContainer.innerHTML += `
-  <div>
-  <div>${item.name}</div>
-  <div>${item.author}</div>
+  <li class='books-list'>
+  <div>"${item.name}" by ${item.author}</div>
   <button class='btn-remove'>Remove</button>
-  </div>
-  <hr>
+  </li>
   `;
     const book = {
       name: item.name,

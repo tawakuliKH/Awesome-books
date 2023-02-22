@@ -117,27 +117,20 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
 
 ```sh
  git clone git@github.com:tawakuliKH/Awesome-books.git
 ```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
-
-<!--
-Example commands:
 
 ```sh
   cd my-folder
   git clone git@github.com:tawakuliKH/Awesome-books.git
 
 ```
---->
 
 ### Install
 
@@ -212,8 +205,6 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[Different pages for adding and listing books]**
 - [ ] **[Design it user friendly]**
 
@@ -252,13 +243,10 @@ I would like to thank thanks microverse, inspiring students doing such great thi
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 
-- **[Question_1]**
+- **Where the data is going and saved?**
 
-  - [Answer_1]
+  - I used local storage and I am storing data in local storage of the browser.
 
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
