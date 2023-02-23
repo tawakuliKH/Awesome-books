@@ -79,4 +79,16 @@ function showContact() {
   form.classList.add('hide-form');
 }
 
+window.onload=showList();
 
+listBtn.addEventListener('click', () => {
+  showList();
+})
+
+addNewBtn.addEventListener('click', () => {
+  showForm();
+})
+
+contactBtn.addEventListener('click', () => {
+  showContact();
+})
