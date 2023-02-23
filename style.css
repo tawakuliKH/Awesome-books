@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
 *,
 ::before,
@@ -10,6 +14,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 30px;
   border: 2px solid grey;
 }
@@ -54,7 +59,7 @@ h1,
 }
 
 .books-contain {
-  width: 100%;
+  width: 90%;
   height: 300px;
   border: 2px solid gray;
   overflow: scroll;
@@ -88,6 +93,7 @@ div.books-contain li.books-list:nth-child(odd) {
 .name,
 .author,
 .submit-btn {
+  height: 40px;
   margin-bottom: 20px;
   min-width: 500px;
 }
@@ -97,8 +103,12 @@ div.books-contain li.books-list:nth-child(odd) {
   justify-content: end;
 }
 
+.add-book {
+  padding: 0 10px;
+}
+
 footer {
-  width: 99%;
+  width: 100%;
   position: fixed;
   bottom: 0;
   display: flex;
@@ -107,7 +117,7 @@ footer {
 }
 
 footer p{
-  padding: 5px 30px;
+  padding: 20px 30px;
 }
 
 .contact-info {
