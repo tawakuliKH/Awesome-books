@@ -1,10 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border: 2px solid grey;
+}
+
+.logo {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.menu-item {
+  display: inline;
+  padding: 10px 20px;
+}
+
+.menu-item a,
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.date-container {
+  height: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.date {
+  max-width: 30%;
 }
 
 .container {
@@ -13,10 +52,17 @@
   align-items: center;
 }
 
+h1,
+.title {
+  margin: 50px 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
 .books-contain {
-  width: 100%;
-  height: 200px;
-  border: 1px solid gray;
+  width: 90%;
+  height: 300px;
+  border: 2px solid gray;
   overflow: scroll;
 }
 
@@ -31,7 +77,7 @@ div.books-contain li.books-list:nth-child(odd) {
 .books-list {
   list-style: none;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,7 +91,42 @@ div.books-contain li.books-list:nth-child(odd) {
   gap: 5px;
 }
 
-.form-text {
-  font-size: 20px;
-  font-weight: bold;
+.name,
+.author,
+.submit-btn {
+  height: 40px;
+  margin-bottom: 20px;
+  min-width: 500px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.add-book {
+  padding: 0 10px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+}
+
+footer p {
+  padding: 20px 30px;
+}
+
+.contact-info {
+  font-size: 1.5em;
+}
+
+.hide-list,
+.hide-form,
+.hide-contact {
+  display: none;
 }
