@@ -75,5 +75,4 @@ contact.addEventListener('click', () => {
   contactSection.style.display = 'flex';
   listSection.style.display = 'none';
   addSection.style.display = 'none';
-
 });
