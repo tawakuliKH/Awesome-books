@@ -53,3 +53,27 @@ btnRemove.forEach((item, index) => {
     BookCollection.removeBook(index);
   });
 });
+
+const list = document.querySelector('.list-item');
+const add = document.querySelector('.add-item');
+const contact = document.querySelector('.contact-item');
+const addSection = document.querySelector('.add-new');
+const listSection = document.querySelector('.list');
+const contactSection = document.querySelector('.contact');
+
+add.addEventListener('click', () => {
+  addSection.style.display = 'flex';
+  listSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+list.addEventListener('click', () => {
+  window.location.reload();
+});
+
+contact.addEventListener('click', () => {
+  contactSection.style.display = 'flex';
+  listSection.style.display = 'none';
+  addSection.style.display = 'none';
+
+});
