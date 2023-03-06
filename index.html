@@ -10,80 +10,80 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <a href="#">Awesome Books</a>
+  <div class="container">
+
+    <div class="navigation">
+      <div class="nav-name">
+        <p>Awesome Books</p>
       </div>
       <div>
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="list-btn" href="#">List</a>
-          </li>
-          <li class="menu-item">
-            <a class="add-btn" href="#">Add new</a>
-          </li>
-          <li class="menu-item">
-            <a class="contact-btn" href="#">Contact</a>
-          </li>
+        <ul class="nav-list">
+          <li class="active list-item"><a href="#">List</a> </li>
+          <li class="add-item"><a href="#">Add New</a></li>
+          <li class="contact-item"><a href="#">Contact</a></li>
         </ul>
       </div>
-    </div>
-    <div class="date-container">
-      <div class="date">
-        <script>document.write(new Date())</script>
-      </div>
-    </div>
-  </header>
-
-  <section class="list hide-list">
-    <div class="container">
-      <h1>Awesome Books</h1>
-      <div class="books-contain">
-        <ul class="books-container">
-        </ul>
-      </div>
-    </div>
-  </section>
       
-  <form class="form hide-form">
-    <div class="container">
-      <div class="title">
-        Add New Book
-      </div>
-      <div>
-        <input name="name" class="name" id="name" type="text" placeholder="Title">
-      </div>
-      <div>
-        <input name="author" class="author" id="author" type="text" placeholder="Author">
-      </div>
     </div>
-    <div class="submit-btn">
-        <input type="submit" class="add-book" value="submit">
+    <div class="date">
+      <script>document.write(new Date())</script>
     </div>
-  </form>
 
-  <section class="contact hide-contact">
-    <div class="container">
-      <div class="title">
-        Contact information
+    <section class="list">
+      <h2>
+        All Awesome Books
+      </h2>
+      <div class="books-contain">
+        
+        <ul class="books-container">
+  
+        </ul>
+  
       </div>
-      <div class="contact-info">
-        <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+
+    </section>
+
+    <section class="add-new">
+      <h2>Add New Book</h2>
+      <form class="form">
+       
+        <div class="input">
+          <input name="name" class="name" id="name" type="text" placeholder="Title">
+        </div>
+        <div class="input">
+          <input name="author" class="author" id="author" type="text" placeholder="Author">
+        </div>
+        <div class="input">
+          <input type="submit" class="add-book" value="Add">
+        </div>
+      </form>
+    </section>
+
+    <section class="contact">
+      <h2>
+        Contact Information
+      </h2>
+
+      <p>
+        Do you have any question or you just want to say "Hello"? <br>You can reach out to use!
+      </p>
+      <div>
         <ul>
-          <li>Our e-mail: mail@mail.com</li>
-          <li>Our phone number: 0049586534422</li>
-          <li>Our address: Streetname 22, 84503 City, Country</li>
+          <li>Our email: tawakuli456@gmail.com</li>
+          <li>Our Phone number: 0093765074686</li>
+          <li>Our Address: 13th district, Kabul, Afghanistan</li>
         </ul>
       </div>
+    </section>
+
+    <div class="footer">
+      @copyright 2023
     </div>
-  </section>
 
-  <footer>
-    <p>Copyright &copy;</p>
-  </footer>
+  </div>
 
-  <script src="app.js"></script>
+
 </body>
 
 </html>
+<script src="app.js"></script>

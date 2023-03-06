@@ -54,41 +54,25 @@ btnRemove.forEach((item, index) => {
   });
 });
 
-const listBtn = document.querySelector('.list-btn');
-const addNewBtn = document.querySelector('.add-btn');
-const contactBtn = document.querySelector('.contact-btn');
-const list = document.querySelector('.list');
-const form = document.querySelector('.form');
-const contact = document.querySelector('.contact');
+const list = document.querySelector('.list-item');
+const add = document.querySelector('.add-item');
+const contact = document.querySelector('.contact-item');
+const addSection = document.querySelector('.add-new');
+const listSection = document.querySelector('.list');
+const contactSection = document.querySelector('.contact');
 
-function showList() {
-  list.classList.remove('hide-list');
-  form.classList.add('hide-form');
-  contact.classList.add('hide-contact');
-}
-
-function showForm() {
-  form.classList.remove('hide-form');
-  contact.classList.add('hide-contact');
-  list.classList.add('hide-list');
-}
-
-function showContact() {
-  contact.classList.remove('hide-contact');
-  list.classList.add('hide-list');
-  form.classList.add('hide-form');
-}
-
-window.onload = showList();
-
-listBtn.addEventListener('click', () => {
-  showList();
+add.addEventListener('click', () => {
+  addSection.style.display = 'flex';
+  listSection.style.display = 'none';
+  contactSection.style.display = 'none';
 });
 
-addNewBtn.addEventListener('click', () => {
-  showForm();
+list.addEventListener('click', () => {
+  window.location.reload();
 });
 
-contactBtn.addEventListener('click', () => {
-  showContact();
+contact.addEventListener('click', () => {
+  contactSection.style.display = 'flex';
+  listSection.style.display = 'none';
+  addSection.style.display = 'none';
 });
